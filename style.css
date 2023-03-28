@@ -1,0 +1,642 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1em;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color:  hsl(0, 0%, 100%);
+    min-width: 1340px;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+/* ==============================START MAIN AREA================================ */
+.site{
+  width: 100%;
+}
+/* ==============================START HEADER AREA============================== */
+header{
+  background-color: hsl(13, 100%, 72%);
+  background-image: url(./images/bg-pattern-intro-desktop.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-bottom-left-radius: 150px;
+  width: 100%;
+}
+/* ==============================START NAVBAR AREA=============================== */
+.bar{
+  padding: 2rem;
+  display: flex;
+}
+
+.logo{
+  height: 20px;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+}
+
+.bar-ul{
+  display: flex;
+  gap: 75px;
+  margin-left: 100px;
+}
+
+.bar-li{
+  list-style: none; 
+}
+
+.li-a{
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  font-size: 1.2rem;
+  font-family: "Overpass";
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.bar-li:focus{
+  text-decoration-color: hsl(0, 0%, 100%);
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+}
+
+.drop{
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(0, 0%, 100%);
+  margin-top: 40px;
+  padding: 2rem 1rem;
+  border-radius: 8px;
+  display: none;
+  position: absolute;
+  width:170px;
+  margin-left: -120px;
+  gap: 50px;
+}
+
+.com-drop{
+  width: 120px;
+}
+
+.drop-a{
+  text-decoration: none;
+  color:hsl(207, 13%, 34%);
+  font-family: "Overpass";
+  font-weight: 300;
+  cursor: pointer;
+  font-size: 1.2rem; 
+  z-index: 1;
+  margin-top: 1.5rem;
+  display: inline-block;
+}
+
+.drop-a:hover{
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+hr{
+  display: none;
+}
+
+.log{
+  margin-left: 300px;
+}
+
+.in-btn{
+  padding: 0.5rem;
+  color: hsl(0, 0%, 100%);
+  border: none;
+  background: none;
+  font-size: 1.2rem;
+  font-family: "Overpass";
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.up-btn{
+  padding: 1rem 1.5rem;
+  color: hsl(356, 100%, 66%);
+  border: none;
+  background-color:hsl(0, 0%, 100%) ;
+  font-size: 1.2rem;
+  font-family: "Overpass";
+  font-weight: 300;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.up-btn:hover{
+  background-color: hsl(355, 100%, 74%);
+  color: hsl(0, 0%, 100%);
+}
+
+.menu{
+  display: none;
+}
+
+/* ==============================END NAVBAR AREA=============================== */
+.head{
+  margin-top: 2rem;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding-bottom: 5rem;
+}
+
+.head-h1{
+color: white;
+font-weight: 700;
+font-family: "Ubuntu";
+font-size: 3rem;
+}
+
+.head-para{
+  margin-top: 10px;
+  color: white;
+  font-size: 300;
+  font-family: "Overpass";
+  font-size: 1rem;
+}
+
+.button{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.free-btn{
+  padding: 1rem;
+  color:hsl(356, 100%, 66%);
+  background-color: white;
+  font-size: 1.2rem;
+  font-family:"Overpass";
+  font-weight: 300;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.free-btn:hover{
+  color:white;
+  background-color: hsl(355, 100%, 74%);
+}
+
+.more-btn{
+  padding: 1rem;
+  color:white;
+  background-color: hsl(355, 100%, 74%);
+  font-size: 1.2rem;
+  font-family:"Overpass";
+  font-weight: 300;
+  border: 1px solid white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.more-btn:hover{
+  color:hsl(356, 100%, 66%);
+  background-color: white;
+}
+/* ==============================END HEADER AREA============================== */
+/* =============================START FUTURE SECTION AREA====================== */
+
+.future-h2{
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-top: 150px;
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: "Ubuntu";
+  columns: hsl(208, 49%, 24%);
+  margin-right: 130px;
+}
+
+.future-div{
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 20px;
+}
+
+.future-img{
+  width: 50%;
+  z-index: 1;
+  margin-top: -70px;
+  margin-right: 20px;
+  position: relative;
+}
+
+.future-div2{
+  margin-top: 100px;
+  padding-left: 10px;
+}
+
+.future-h3{
+  color: hsl(208, 49%, 24%);
+  font-family: "Ubuntu";
+  font-weight: 500;
+  font-size: 1.5rem;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.future-para{
+   color: hsl(207, 13%, 34%);
+  font-family: "Overpass";
+  font-weight: 300;
+  font-size: 1rem;
+  align-items: center;
+  margin-top: 30px;
+  padding-right: 20px;
+  line-height: 30px;
+  width:520px;
+}
+
+/* =============================END FUTURE SECTION AREA====================== */
+/* =============================START ART SECTION AREA====================== */
+#art{
+  display: flex;
+  flex-direction: row;
+  background-color:  hsl(237, 17%, 21%);
+  height: 350px;
+  justify-content: space-between;
+  border-radius: 0px 150px 0px 150px;
+  padding: 2rem;
+  background-image: url(./images/bg-pattern-circles.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 5%;
+  margin-top: 100px;
+}
+
+.art-img{
+  position: relative;
+  height: 450px;
+  margin-top: -60px;
+  z-index: 1;
+  margin-left: 100px;
+}
+
+.art-div{
+  width: 50%;
+}
+
+.art-h2{
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: "Ubuntu";
+  margin-top: 50px;
+}
+
+.art-para{
+  color: white;
+  font-family: "Overpass";
+  font-weight: 300;
+  font-size: 1rem;
+  align-items: center;
+  margin-top: 30px;
+  width: 500px;
+  line-height: 40px;
+}
+/* =============================END ART SECTION AREA====================== */
+/* =============================START FREE SECTION AREA====================== */
+#free{
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  padding-bottom: 5rem;
+}
+
+.free-img{
+  width: 50%;
+  margin-left: 10px;
+}
+
+.free-h3{
+  color: hsl(208, 49%, 24%);
+  font-family: "Ubuntu";
+  font-weight: 700;
+  font-size: 1.5rem;
+  align-items: center;
+  margin-top: 200px;
+}
+
+.free2{
+  margin-top: 50px;
+}
+
+.free-para{
+   color: hsl(207, 13%, 34%);
+  font-family: "Overpass";
+  font-weight: 300;
+  font-size: 1rem;
+  align-items: center;
+  margin-top: 30px;
+  padding-right: 20px;
+  line-height: 30px;
+  width: 520px;
+}
+/* =============================END FREE SECTION AREA====================== */
+/* =============================START END SECTION AREA====================== */
+#end{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: hsl(240, 10%, 16%);
+  padding: 4rem;
+  margin-top: 2rem;
+  border-top-right-radius: 150px;
+}
+
+.end-logo{
+  height: 50px;
+}
+
+.end-div{
+  display: flex;
+  flex-direction: column;
+}
+
+.end-h4{
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: "Ubuntu";
+  color: white;
+  margin-bottom: 3rem;
+}
+
+.end-a{
+  margin-top: 1rem;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 300;
+  font-family: "Overpass";
+  color: hsl(240, 2%, 79%);
+  cursor: pointer;
+}
+
+.end-a:hover{
+  text-decoration: underline;
+  text-decoration-color: hsl(240, 2%, 79%);
+  text-decoration-thickness: 3px;
+}
+
+/* =============================END END SECTION AREA====================== */
+/* ==============================END MAIN AREA================================ */
+/* =============================START FOOTER  AREA=========================== */
+.foot {
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 20px;
+    color: hsl(0, 100%, 67%);
+    background-color: hsl(240, 10%, 16%);
+  }
+  
+  .foot a {
+    text-decoration: none;
+    color: hsl(39, 100%, 56%);
+  }
+  
+  .foot a:hover {
+    color: hsl(300, 69%, 71%);
+  }
+  /* =============================END FOOTER  AREA=========================== */
+  /* ===============================START MEDIA QUERY======================== */
+@media screen and (max-width:375px) {
+  body{
+    min-width: 375px;
+  }
+
+  header{
+    background-image: url(./images/bg-pattern-intro-mobile.svg);
+    padding-bottom: 9rem;
+    border-bottom-left-radius: 100px;
+    
+  }
+
+  .bar{
+   justify-content: space-between;
+  }
+
+  .navbar{
+    display: none;
+    flex-direction: column;
+    justify-content: center; 
+    text-align: center;
+    background-color: #ffffff; 
+     box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.171);
+     padding: 20px;
+      min-width: 80%;
+      position: fixed;
+      height: 80%;
+      margin-top: 50px;
+  }
+
+  .bar-ul{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    gap: 50px;
+    margin-left: 0px;
+  }
+
+  .arrow{
+    content: url(./images/icon-arrow-dark.svg);
+  }
+
+  .drop{
+    background-color: lightgrey;
+    z-index: 1;
+    text-align: center;
+  }
+
+.li-a{
+    color: hsl(208, 49%, 24%);
+  }
+
+  .drop-a{
+  color: hsl(237, 17%, 21%);
+    text-align: center;
+    display: block;
+  }
+
+  hr{
+    display: block;
+    margin-top: 50px;
+  }
+
+  .log{
+    flex-direction: column;
+    display: flex;
+    margin-left: 0px;
+    margin-top: 100px;
+  }
+
+  .in-btn{
+    color:hsl(237, 23%, 32%);
+  }
+
+  .up-btn{
+    padding: 1rem 0.5rem;
+    margin-top: 10px;
+    background-color: hsl(355, 100%, 74%);
+    color: hsl(0, 0%, 100%);
+  }
+
+  .up-btn:hover{
+     background-color:hsl(0, 0%, 100%) ;
+    color: hsl(356, 100%, 66%);
+  }
+
+  .menu, #open{
+    display: block;
+  }
+
+  #close{
+    display: none;
+  }
+
+  .head{
+    padding: 2rem 1rem;
+  }
+
+  .head-h1{
+    font-size: 2.3rem;
+    line-height: 40px;
+  }
+
+  .head-para{
+    padding: 1rem 2.5rem;
+    line-height: 30px;
+  }
+
+  .button{
+    margin-top: 2rem;
+  }
+
+  #future{
+    justify-content: center;
+  }
+
+  .future-div, #art, #free, #end{
+    flex-direction: column;
+    text-align: center;
+
+  }
+
+  .future-h2{
+    font-size: 1.5rem;
+    margin-right: 0px;
+    margin-top: 100px;
+    text-align: center;
+  }
+
+  .future-img{
+    content: url(./images/illustration-editor-mobile.svg);
+    margin-top: 50px;
+    width: 95%;
+  }
+
+  .future-div2{
+    margin-top: 50px;
+    justify-content: center;
+  }
+
+  .future-h3{
+    padding: 0px 3rem;
+    line-height: 30px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .future-para, .free-para, .art-para{
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    padding: 0rem 1rem;
+  }
+
+  #art{
+    height: fit-content;
+    justify-content: center;
+    text-align: center;
+    margin-top: 200px;
+    border-radius: 0px 100px 0px 100px;
+    background-position: top;
+    background-position-y: -160px;
+    padding-bottom: 9rem;
+  }
+
+  .art-img{
+    margin-left: 0px;
+    margin-top: -150px;
+    height: 350px;
+  }
+
+  .art-div{
+    width: 100%;
+  }
+
+  .art-h2{
+     padding: 0rem 2rem;
+     line-height: 40px;
+  }
+
+  .free-img{
+    content: url(./images/illustration-editor-mobile.svg);
+    width: 90%;
+  }
+
+  .free-h3{
+    margin-top: 50px;
+  }
+
+  #end{
+    border-top-right-radius: 100px;
+    align-items: center;
+  }
+
+  .end-logo{
+    width: 70px;
+  }
+
+  .end-div{
+    margin-top: 50px;
+  }
+
+  .end-h4{
+    margin-bottom: 1rem;
+  }
+  @keyframes slide-in {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slide-out {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(100%);
+    }
+  }
+}
+
+  /* ===============================END MEDIA QUERY======================== */
